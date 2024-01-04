@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+  background-color: #373737;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+}
+
+.section_content_header{
+  min-height: calc(100vh - 100px) ;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  max-width: 1200px;
+  margin: auto;
+  gap: 5rem;
+}
+.left_content_header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left_content_header h1{
+  font-size: 3rem;
+  width: 100%;
+  line-height: 3.5rem;
+}
+.left_content_header p{
+  margin: 1rem 0 1.5rem 0;
+  color: #f9c3ba;
+}
+.left_content_header form{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.left_content_header form button{
+  border: none;
+  background-color: #fc5639;
+  color: #fff;
+  padding: 1rem;
+  white-space: nowrap;
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+
+}
+.right_content_header{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+  place-content: center;
+  position: relative;
+}
+.right_content_header img{
+ max-width: 300px;
+ border-radius: 10px;
+}
+.right_content_header img:nth-child(1){
+  transform: translateY(70px);
+  -webkit-transform: translateY(70px);
+  -moz-transform: translateY(70px);
+  -ms-transform: translateY(70px);
+  -o-transform: translateY(70px);
+}
+
+.right_content_header  .content_img_text{
+  background: linear-gradient(to right , rgba(131, 92, 62, 0.6),rgba(160, 107, 67, 0.4));
+  backdrop-filter: blur(30px);
+  color: #000;
+  font-size: 20px;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 310px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  border-radius: 10px;
+
+}
+.right_content_header  .content_img_text ul li{
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+@media screen and (max-width:999px) {
+  .section_nav nav{
+    display: none;
+  }
+  .section_content_header{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .left_content_header{
+    text-align: center;
+  }
+  .left_content_header form{
+    justify-content: center;
+  }
+  .right_content_header img:nth-child(2) {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+}
