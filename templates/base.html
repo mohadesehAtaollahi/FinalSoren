@@ -1,0 +1,68 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>sorenGym</title>
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header class="header_main_site">
+    <div class="dots_pattern">
+      <img src="pics/dotts.png" alt="">
+    </div>
+    <div class="logo">
+      <img src="../static/pics/logoo.png" alt="">
+    </div>
+    <nav class="navgation_site">
+      <li>
+        <a href="#" class="cative_link">Home</a>
+      </li>
+      <li>
+        <a href="#">ورود/ثبت نام</a>
+      </li>
+      <li>
+        <a href="#">Diet</a>
+      </li>
+      <li>
+        <a href="#">Join now</a>
+      </li>
+      <li>
+        <a href="#">Events</a>
+      </li>
+    </nav>
+    <div class="cricle_shadow postion_left"></div>
+    </header>
+
+
+    {% block content %}    
+    {% endblock content %}
+
+    <footer>
+    <div class="col" dir="rtl" style="color: #fff;">
+      <h3>
+        SOREN GYM
+      </h3>
+      <p>کرمان</p>
+      <p>خیابان احمدی</p>
+      <p>پارک مطهری</p>
+      <p class="email_id">sorengym@gmail.come
+      </p>
+      <h4>034-12345678
+      </h4>
+    </div>
+    <hr>
+    <p class="copyright">Click team © 2024 - All Rights Reserved</p>
+    </footer>
+</body>
