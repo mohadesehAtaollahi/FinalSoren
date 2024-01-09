@@ -6,40 +6,36 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <link href="{% static '../static/css/home.css' %}" type="text/css" rel="stylesheet">
   <title>sorenGym</title>
-
-  <!-- Favicons -->
-  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
-
-  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
 
 </head>
 
 
 <body>
+
     <header class="header_main_site">
     <div class="dots_pattern">
-      <img src="pics/dotts.png" alt="">
+      <img src="{% static '../static/pics/dotts.png' %}" alt="">
     </div>
     <div class="logo">
-      <img src="../static/pics/logoo.png" alt="">
+      <img src="{% static '../static/pics/logoo.png' %}" alt="">
     </div>
     <nav class="navgation_site">
       <li>
-        <a href="#" class="cative_link">Home</a>
+        <a href="{% static 'home.html' %}" class="cative_link">Home</a>
       </li>
       <li>
-        <a href="#">ورود/ثبت نام</a>
+        <a href="{% static 'login.html' %}">login</a>
       </li>
       <li>
-        <a href="#">Diet</a>
+        <a href="{% static 'diet.html' %}">Diet</a>
       </li>
       <li>
-        <a href="#">Join now</a>
+        <a href="{% static 'EVENT.html' %}">Join now</a>
       </li>
       <li>
-        <a href="#">Events</a>
+        <a href="{% static 'EVENT.html' %}">Events</a>
       </li>
     </nav>
     <div class="cricle_shadow postion_left"></div>
@@ -65,4 +61,5 @@
     <hr>
     <p class="copyright">Click team © 2024 - All Rights Reserved</p>
     </footer>
+
 </body>
